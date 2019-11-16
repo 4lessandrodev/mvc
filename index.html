@@ -5,31 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8701d44bdc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css">
   </head>
 
-  <body>
-    <main class="container">
-      <table>
-        <thead>
-          <tr>
-            <th>Frutas</th>
-          </tr>
-        </thead>
-        <tfoot>
-          <tr>
-            <td>Rodape</td>
-          </tr>
-          <tbody>
+  <body class="background">
+    <header class="header">
+      <h3 class="titulo">Escolha uma opção</h3>
+    </header>
+    <main>
+      <nav>
+        <div class="card text-white bg-success mb-3 container" style="max-width: 18rem;"
+          onclick='location.href="createUser.html"'>
+          <div class="card-header">Cadastro</div>
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-user-edit"></i>Novo usuário</h5>
+          </div>
+        </div>
 
-            <!--Inserir aqui os dados da lista-->
-
-          </tbody>
-      </table>
-      <input type="button" value="filtrar valores acima de 18" onclick="filtrar()">
-      <input type="button" value="eliminar filtros" onclick="eliminarFiltros()">
+        <div class="card bg-light mb-3 container" style="max-width: 18rem;" onclick='location.href="profile.html"'>
+          <div class="card-header">Perfil</div>
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-user-circle"></i>Visualizar</h5>
+          </div>
+        </div>
+      </nav>
     </main>
-    <script src="resources/js/app.js"></script>
   </body>
 
 </html>

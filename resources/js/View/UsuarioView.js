@@ -23,6 +23,6 @@ export class UsuarioView extends View {
     const btnOk = tg.$('.swal-button');
     btnOk.addEventListener('click', function () {
       campo.focus();
-    })
+    });
   }
 }

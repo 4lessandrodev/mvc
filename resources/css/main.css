@@ -7,6 +7,7 @@
   margin: 2em auto;
   max-width: 420px;
   min-width: 320px;
+  background-color: azure;
 }
 
 .formulario {
@@ -42,4 +43,41 @@ label {
   font-family: sans-serif;
   font-size: small;
   margin-bottom: 0.4em;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.75);
+}
+
+.background {
+  background-image: linear-gradient(10deg, rgb(37, 18, 61) 45%, rgba(103, 73, 128, 0.678) 100%),
+    url(../img/user-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+.titulo {
+  color: white;
+  padding: 0.8em;
+  margin: auto;
+}
+
+.header {
+  background-color: rgb(37, 18, 61);
+}
+
+i {
+  font-size: 2.5em;
+  margin: 0.2em;
+  display: inline-block;
+}
+
+.card-body {
+  display: inline-block;
 }

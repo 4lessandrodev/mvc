@@ -6,7 +6,7 @@ export class UsuarioController {
     this.view = view;
   }
   validarDados(campos) {
-    const user = new Object();
+    const user = new Object(null);
     for (let campo of campos) {
       if (campo.value == '' || campo.value == null || campo.value == undefined) {
         this.view.mensagemDeAlerta(campo);
