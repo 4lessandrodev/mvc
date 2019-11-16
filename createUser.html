@@ -15,7 +15,7 @@
         <img src="resources/img/user-1.png" class="icon-user">
 
         <label for="nome">Nome</label>
-        <input type="text" name="nome" required class="campo">
+        <input type="text" name="nome" required class="campo" id="nome">
 
         <label for="telefone">Telefone</label>
         <input type="tel" class="campo" required name="telefone">
@@ -29,10 +29,11 @@
         <label for="senha">Senha</label>
         <input type="password" name="senha" required class="campo">
 
-        <input type="submit" value="Salvar" required class="btn">
+        <input type="button" value="Salvar" required class="btn" name="btn-salvar">
       </form>
     </main>
     <script src="./resources/js/app.js" type="module"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 
 </html>
